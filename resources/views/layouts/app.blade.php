@@ -19,6 +19,7 @@
       @yield('projects')
       @yield('categories')
 
+      @yield('product')
     </div>
     @include('components.footer')
 
