@@ -9,6 +9,6 @@ class CategoriesController extends Controller
 {
     public function category()
     {
-        return view('categories.categories');
+        return view('pages.categories.categories');
     }
 }

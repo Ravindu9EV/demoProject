@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class ProjectsController extends Controller
 {
     public function project() {
-        return view('projects.projects');
+        return view('pages.projects.projects');
     }
 }

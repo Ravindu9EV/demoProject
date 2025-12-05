@@ -10,7 +10,7 @@ class AboutUsController extends Controller
 
     public function index()
     {
-        return view('about-us.about_us');
+        return view('pages.about-us.about_us');
     }
 
 }
