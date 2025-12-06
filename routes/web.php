@@ -20,5 +20,10 @@ Route::get('/categotries',[CategoriesController::class,'category'])->name('categ
 
 Route::get('/projects',[ProjectsController::class,'project'])->name('projects');
 
-Route::get('/product',[ProductController::class,'index'])->name('product');
-Route::post('product/save',[ProductController::class,'store'])->name('product.save');
+Route::get('/products',[ProductController::class,'index'])->name('products.index');
+Route::get('/products/create',[ProductController::class,'create'])->name('products.create');
+Route::post('products/save',[ProductController::class,'store'])->name('products.save');
+Route::get('/products/{id}',[ProductController::class,'show'])->name('products.show');
+Route::get('/products/{id}/edit',[ProductController::class,'edit'])->name('products.edit');
+Route::patch('/products/{id}/update',[ProductController::class,'update'])->name('products.update');
+Route::get('/products/{id}/delete',[ProductController::class,'destroy'])->name('products.destroy');

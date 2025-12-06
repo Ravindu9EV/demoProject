@@ -16,7 +16,7 @@
                     <li class="nav-item"><a class="nav-link {{ $currentRoute=='projects' ? 'active' : ''}}" href="{{ route('projects')}}">Projects</a></li>
                     <li class="nav-item"><a class="nav-link {{ $currentRoute=='about_us' ? 'active' : '' }}" href="{{ route('about_us')}}">About Us</a></li>
                     <li class="nav-item"><a  class="nav-link {{ $currentRoute=='contact' ? 'active' : ''}}" href="{{ route('contact')}}">Contact Us</a></li>
-                    <li class="nav-item"><a  class="nav-link {{ $currentRoute=='product' ? 'active' : ''}}" href="{{ route('product')}}">Product</a></li>
+                    <li class="nav-item"><a  class="nav-link {{ $currentRoute=='product' ? 'active' : ''}}" href="{{ route('products.create')}}">Product</a></li>
                 </ul>
                 <form class="d-flex">
                     <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
