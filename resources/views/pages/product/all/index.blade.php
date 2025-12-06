@@ -25,8 +25,8 @@
                             <td >${{$product->price}}</td>
                             <td>
                                 <a href="{{ route('products.show', $product->id) }}" class="btn btn-info">View</a>
-                                 <a href="{{ route('products.edit', $product->id) }}" class="btn btn-warning">Edit</a>
-                                  <a href="{{ route('products.destroy', $product->id) }}" class="btn btn-danger">Delete</a>
+                                <a href="{{ route('products.edit', $product->id) }}" class="btn btn-warning">Edit</a>
+                                <a href="javascript:void(0)" onclick="deleteConfirm('{{ route('products.destroy', $product->id) }}','product')" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                         @endforeach
@@ -40,3 +40,5 @@
 </div>
 
 @endsection
+
+

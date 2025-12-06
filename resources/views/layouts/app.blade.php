@@ -12,6 +12,11 @@
     @include('components.nav-bar')
 
     <div class="container style="height:90vh">
+        <div class="row  justify-content-center" style="margin-top: 50px;">
+            <div class="col-lg-6">
+                @include('components.alerts')
+            </div>
+        </div>
       @yield('page')
 
       @yield('about-us')

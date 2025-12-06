@@ -8,7 +8,7 @@
                 <h1>This is Edit Product Form</h1>
 
 
-                <form  action="{{ route('products.update',$product->id) }}" method="post">
+                <form   method="POST" action="{{ route('products.update',$product->id) }}" id='updateForm'>
                     @csrf
                     @method('PATCH')
                     <div class="form-group">
@@ -46,7 +46,7 @@
                         @enderror
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="button" href="javascript:void(0)" onclick="editConfirm('product')" class="btn btn-primary">Update</button>
                 </form>
             </div>
         </div>
@@ -54,3 +54,5 @@
 </div>
 
 @endsection
+
+
