@@ -5,7 +5,7 @@ namespace Axc\UserGears;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Facade;
-
+use Ramsey\Collection\Tool\ValueToStringTrait;
 
 class ProductGear extends Facade
 {
@@ -39,18 +39,12 @@ class ProductMethods
         return $this->model->all();
     }
 
-    /**
-     * Method own
-     *
-     * @param $params $params [explicite description]
-     * @param $type $type [explicite description]
-     * @param $paginate $paginate [explicite description]
-     *
-     * @return mixed
-     */
-    public function own($params, $type = 1, $paginate = 6): mixed
+
+
+
+    public function own(Array $params,int $type = 1,int $paginate = 6): mixed
     {
-        return $this->model->own($params, $type, $paginate);
+        return $this->model->own($params, $type, "".$paginate);
     }
 
 
