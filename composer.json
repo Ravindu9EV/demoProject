@@ -23,8 +23,13 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
+            "Database\\Seeders\\": "database/seeders/",
+            "Axc\\": "axcGears/"
+        },
+        "files": [
+        "app/helpers/helpers.php",
+        "app/helpers/system-helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
